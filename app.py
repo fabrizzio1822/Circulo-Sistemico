@@ -20,18 +20,23 @@ def formulario():
 @app.route('/enviar_formulario', methods=['POST'])
 def enviar_formulario():
     if request.method == 'POST':
-        nombre = request.form['nombre']
-        telefono = request.form['telefono']
-        email = request.form['email']
+        nombre = request.form.get('nombre')
+        telefono = request.form.get('telefono')
+        email = request.form.get('email')
 
-        message = Message('Nuevo formulario de contacto',
-                          sender='fabrizzioparrillis@gmail.com',
-                          recipients=['circulosistemico1@gmail.com'])
-        message.body = f"Nombre: {nombre}\nTeléfono: {telefono}\nCorreo Electrónico: {email}"
+        if nombre and telefono and email:
+            message = Message('Nuevo formulario de contacto',
+                              sender='fabrizzioparrillis@gmail.com',
+                              recipients=['circulosistemico1@gmail.com'])
+            message.body = f"Nombre: {nombre}\nTeléfono: {telefono}\nCorreo Electrónico: {email}"
 
-        mail.send(message)
+            mail.send(message)
 
-        return "<h2>¡Formulario enviado con éxito!</h2><p>Gracias por tu contacto. Nos pondremos en contacto contigo pronto.</p>"
+            return "<h2>¡Formulario enviado con éxito!</h2><p>Gracias por tu contacto. Nos pondremos en contacto contigo pronto.</p>"
+        else:
+            return "<h2>Error al enviar el formulario</h2><p>Por favor, completa todos los campos.</p>"
+    else:
+        return "<h2>Error al enviar el formulario</h2><p>Se ha producido un error. Por favor, vuelve a intentarlo más tarde.</p>"
 
 if __name__ == '__main__':
     app.run(debug=True)
