@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="icon" href="../Imagenes/ces-25-color.png" type="image/x-icon">
+</head>
+<body>
+    <header class="header-nosotros">
+        <div class="enlaces enlaces-nosotros">
+            <a href="/index.html">Volver al Inicio</a>
+        </div>
+
+        <div class="logo logo-nosotros">
+            <img src="/Imagenes/Loso transparente.png" alt="">
+        </div>
+        <div>
+    </header>
+    <main>
+        <section class="seccion-contactate">
+            <div class="container-izquierda">
+
+                <div class="imagen-presentacion">
+                    <img src="../Imagenes/adrian.png" alt="imagen director">
+                </div>
+                <div class="presentacion">
+                    <h1>Hola, soy Adrián</h1>
+                    <h2>Coordinador y docente en la Escuela Sistémica de Argentina y en la Escuela de Terapia Familiar</h2>
+                    <h2>Además de ser el director y fundador del Círculo de Estudios Sistémicos</h2>
+                    <h2>Soy doctor en psicología, máster en terapia familiar, terapeuta de familia y pareja, especialista en modelo sistémico y licenciado en psicología</h2>
+                    <p>Aca te dejo un formulario para que puedas mandarme un mensaje para comunicarte con Nosotros</p> 
+                </div>
+                
+            </div>
+            
+
+            <div class="container-derecha">
+                <h2>Comunicate con Nosotros</h2>
+                <form action="./procesar_formulario.php" method="post">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Enviar" class="cta-a">
+                    </div>
+                </form>
+            </div> 
+        </section>
+
+        <footer class="footer-comunicate">
+            <div class="logo-footer">
+                <img src="../Imagenes/Loso transparente.png" alt="Logo">
+            </div>
+            <div class="ig-wsp">
+                <h3>Comunicate a traves de:</h3>
+                <div class="enlaces-footer">
+                    <a href="https://www.instagram.com/circulosistemico/"><img src="../Imagenes/logo ig.png" alt="Logo de Instagram" class="logo-footer logo-enlace"></a>
+                    <a href="https://api.whatsapp.com/message/6ACK444DNTJEM1?autoload=1&app_absent=0"><img src="../Imagenes/logo wsp.png" alt="Logo de Whatsapp" class="logo-footer logo-enlace"></a>
+                </div>
+                
+            </div>    
+        </footer>
+
+    </main>
+
+</body>
+</html>

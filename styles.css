@@ -1,0 +1,2054 @@
+@font-face {
+    font-family: 'AvenirLTStd-Black';
+    src: url('/Fuente/Avenir LT Std 95 Black.otf') format('truetype');
+}
+
+html, body {
+    margin-right: 0;
+    overflow-x: hidden;
+    font-family: 'AvenirLTStd-Black', sans-serif;
+    background-color: #ebebeb;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.cta-a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: #28285D ;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    transition: background-color 1s ease, transform 0.5s ease;
+    overflow: hidden;
+    border: none;
+}
+
+
+/** header estilos **/
+
+header {
+    display: flex;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    position: fixed;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+}
+
+.logo img{
+    max-width: 400px;
+}
+
+.enlaces{
+    list-style: none;
+    display: flex;
+    margin: 20px 50px 0 0;
+}
+
+.enlaces a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    background-color: #62539F;
+    border-radius: 20px;
+    transition: background-color 1s ease, transform 2s ease;
+    overflow: hidden; 
+}
+
+/** Main estilos **/
+
+.principal{
+    margin-top: 150px;    
+}
+
+.principal div{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.principal h1{
+    font-size: 45px;
+    margin-bottom: 30px;
+    color: rgb(59, 59, 59);
+}
+
+.principal h2{
+    color: rgb(59, 59, 59);
+}
+
+.principal p{
+    color: rgb(59, 59, 59);
+    margin: 5px;
+    font-size:16px ;
+}
+
+.imagen-principal img {
+    max-width: 1400px;
+    margin-bottom: -40px;
+    border-radius: 40px;
+}
+
+/** Seccion Video **/
+
+.section-video{
+    padding: 80px;
+}
+
+.titulo-video{
+    padding: 10px;
+}
+
+.t-v{
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 30px;
+}
+
+.imagen-f h2{
+    font-size: 35px;
+    color: rgb(59, 59, 59);
+}
+
+.imagen-f p{
+    color: rgb(59, 59, 59) ;
+}
+
+.imagen-f ul{
+    margin-left: -20px;
+}
+
+.imagen-f ul li{
+    margin-top: -10px;
+}
+
+.video-f video{
+    width: 900px;
+    aspect-ratio: 2/1;
+    border-radius: 30px;
+}
+
+.boton {
+    border: none;
+    background: none;
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: underline; 
+    transition: color 0.3s;
+}
+
+.boton p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px; 
+    line-height: 1.5;
+}
+
+.debajo-video{
+    text-align: center;
+}
+
+.debajo-video a{
+    text-decoration: none;
+}
+
+/** Seccion Servicios **/
+
+.servicios{
+    margin-top: -60px;
+}
+
+.tipos-servicios{
+    border-radius: 40px;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    background-color: #fffffff6;
+    padding: 30px;
+}
+
+
+.titulo-servicios{
+    text-align: center;
+    font-size: 25px;
+    color: rgb(59, 59, 59);
+    border-radius: 30px;
+}
+
+.sombra{
+    border-radius: 47px;
+    background: #ffffff;
+    box-shadow:  30px 30px 100px #e3e3e3,
+                -30px -30px 100px #ffffff;
+}
+
+.diplomatura{
+    width: 50%;
+}
+
+.postgrados{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 60px;
+}
+
+.texto-postgrados{
+    text-align: center;
+    color: rgb(59, 59, 59);
+}
+
+.postgrados img{
+    padding: 20px;
+    max-width: 100px;
+    filter: grayscale(100%);
+    transition: filter 1s, transform 1s;
+}
+
+.postgrados div h4{
+    color: rgb(59, 59, 59) ;
+}
+
+.postgrados > div {
+    text-align: center;
+    width: 20%; 
+}
+
+.aviso{
+    font-size: 1;  
+}
+
+.dip-img{
+    padding: 0 40px;
+}
+
+.linea{
+    margin-top: 35px;
+}
+
+.linea-aviso{
+    margin-top: 34px;
+}
+
+.especialidades{
+    width: 50%;
+}
+
+/** Formulario **/
+
+.formulario {
+    background: url(./Imagenes/formulario.jpg);
+    height: 70vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.datos {
+    background: transparent;
+    backdrop-filter: blur(10px);
+    font-size: 18px;
+    height: 400px;
+    width: 250px;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    background-color: rgba(40, 40, 93 , 0.5);
+    padding: 0 60px 80px 60px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+    border-radius: 20px; 
+    padding: 10px; 
+    margin-bottom: 10px;  
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+input[type="submit"] {
+    cursor: pointer;    
+}
+
+/** Footer **/
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #cfcfcf;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.logo-footer img{
+    max-width: 400px;
+}
+
+.ig-wsp h3{
+    color: rgb(59, 59, 59) ;
+}
+
+.enlaces-footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo-footer{
+    max-width: 200px;
+}
+
+.logo-enlace{
+    max-width: 50px;
+    transition: max-width 0.3s;
+}
+
+/** ---------------- ESTILOS SOBRE NOSOTROS --------------**/
+
+/** Header **/
+
+.enlaces-nosotros{
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+
+.logo-nosotros{
+    margin-right: 250px;
+}
+
+/** Principal **/
+
+.principal-nosotros{
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-around;
+}
+
+.titulo-nosotros{
+    width: 30%;
+    margin: 200px -280px 0 0;
+}
+
+.titulo-nosotros h1{
+    font-size: 40px;
+    color: #0784B2;
+}
+
+.titulo-nosotros h2{
+    width: 600;
+}
+
+.titulo-nosotros p{
+    font-size: 18px;
+    color: rgb(59, 59, 59);
+    line-height: 1.5;
+}
+
+.imagen-principal-nosotros{
+    margin-right: -75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagen-principal-nosotros img {
+    width: 900px;
+    height: auto; 
+    overflow: hidden;
+}
+
+.container-img-uno{
+    margin: 0 300px 0 0;
+}
+
+.container-img-dos{
+    margin: -600px -300px 0 0;
+}
+
+.img-dos{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: polygon(70% 0%, 100% 0%, 100% 100%, 20% 100%);
+}
+
+.img-uno{
+    margin: 0 0 0 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+}
+
+/** Nosotros **/
+
+.container::-webkit-scrollbar {
+    width: 5px;
+}
+
+.container::-webkit-scrollbar-track {
+    border-radius: 50px;
+    background-color: #f1f1f1;
+}
+
+.container::-webkit-scrollbar-thumb {
+    display: flex;
+    justify-content: left;
+    background-color: #28285D;
+    border-radius: 4px; 
+}
+
+.historia{
+    text-align: center;   
+}
+
+.historia h2{
+    padding-block: 30px;
+    font-size: 30px;
+    color: #0784B2;
+    margin-top: 40px;
+}
+
+.container{
+    margin: auto;
+    display: flex;
+    max-width: 1000px;
+    height: 585px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0,5);
+}
+
+.container img{
+    width: 100%;
+    object-fit: cover;
+    scroll-snap-align: center;
+}
+
+
+/** Confiar en Nosotros **/ 
+
+.razones{
+    color:  rgb(59, 59, 59);
+    margin: 60px;
+}
+
+.razones h2{
+    color: #0784B2;
+}
+
+.razones-para-confiar li{
+    font-size: 20px;
+    margin:20px 0
+}
+
+/** -------------- ESTILOS SOBRE CONTACTATE -------------**/
+
+.seccion-contactate{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: auto;
+}
+
+.container-izquierda{
+    height: 600px;
+    width: 60%;
+    margin: 55px -10px 30px 55px;
+    color: #62539F;
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+.container-derecha {
+    border-radius: 20px;
+    color: #fff;
+    margin: 20px 30px 15px 0;
+    padding: 60px;
+    background: linear-gradient(to bottom, #62539F, #28285D);
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1.9);
+}
+
+.presentacion{
+    margin: auto;
+    text-align: center;
+    width: 50%;
+}
+
+.imagen-presentacion{
+    margin: 50px 0 0 60px;
+}
+
+.imagen-presentacion img {
+    max-width: 550px;
+    max-height: 550px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    margin: 10px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/** Transiciones **/
+
+.enlaces a:hover {
+    background-color: #0784B2;
+    transform: translateX(0);
+}
+
+.enlaces a::before {
+    content: '';
+    top: 0;
+    right: 100%; 
+    width: 100%;
+    height: 100%;
+    background-color: #0784B2;
+    transition: right 0.5s ease;  
+}
+
+.enlaces a:hover::before {
+    right: 0;
+} 
+
+.postgrados img:hover {
+    transform-origin: center;
+    filter: none;
+    transform: scale(1.1); 
+
+}
+
+.cta-a:hover {
+    background-color: #0784B2;
+    transform: translateX(0);
+}
+
+.cta-a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 100%; 
+    width: 100%;
+    height: 100%;
+    background-color: #0784B2;
+    transition: right 0.5s ease; 
+    z-index: -1; 
+}
+
+.logo-enlace:hover {
+    max-width: 60px;
+}
+
+.carousel {
+    position: relative;
+    max-width: 1450px;
+    margin: 0 auto;
+}
+
+.carousel-images {
+    display: flex;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.carousel-images img {
+    width: 100%;
+    object-fit: cover;
+    scroll-snap-align: center;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 20px;  
+    border-radius: 50%;
+    transition: background-color 0.5s ease;
+}
+
+.prev {
+    left: 0;
+    margin-left: 5px;
+}
+
+.next {
+    right: 0;
+    margin-right: 5px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.7); 
+}
+
+.prev:active,
+.next:active {
+    background-color: rgba(0, 0, 0, 0.9);  
+}
+
+.boton:hover {
+    color: #0784B2; 
+    text-decoration: none; 
+}
+
+.boton:active {
+    color: #28285D;
+}
+
+/*------------------------ Responsive ------------------------*/
+
+@media only screen and (max-width:320px) {
+    .header-inicio{
+        display: block;
+    }
+    
+    .logo-inicio{
+        width: 80%;
+        margin: auto;
+    }
+    
+    .logo-inicio img{
+        max-width: 100% ;
+    }
+
+    .enlaces-inicio-contenedor{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .enlaces-inicio{
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        display: block;
+        font-size: 80%;
+    }
+
+    .principal h1{
+        font-size: 220%;
+    }
+
+    .t-v{
+        display: block;
+    }
+
+    .imagen-f{
+        margin-right: 30px;
+        height: auto;
+        font-size: auto;
+    }
+
+    .imagen-f h2{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .imagen-f p{
+        font-size: 90%;
+    }
+
+    .imagen-f ul li button{
+        text-align: start;
+    }
+
+    .imagen-f ul li button strong{
+        font-size: 12px;
+    }
+    
+    .video-f{
+        margin: auto;
+    }
+    
+    .video-f video{
+        max-width: 110%;
+    }
+
+    .tipos-servicios{
+        display: block;
+    }
+
+    .postgrados-diplomatura {
+        margin-top: -20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .postgrados-diplomatura div {
+        flex: 0 0 30%;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .postgrados-especialidades{
+         margin-top: -20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .postgrados-especialidades div {
+        flex: 0 0 30%;
+        margin: 10px;
+        text-align: center
+    }
+    
+    .diplomatura{
+        margin: auto;
+        width: 100%;
+    }
+
+    .especialidades{
+        border-top: solid 2px grey;
+        padding-top: 30px;
+        margin: auto;
+        width: 100%;
+    }
+
+    .titulo-servicios h2{
+        font-size: 100%;
+    }
+
+    .texto-postgrados h2{
+        font-size: 200%;
+    }
+
+    .texto-postgrados p{
+        font-size: 200%;
+    }
+
+    .postgrados div a img{
+        margin-left: -10px;
+        max-width:  70% ;
+        align-items: center;
+    }
+
+    .postgrados div h4{
+        margin-top: -10px;
+        text-align: center;
+        font-size: 60%;
+    }
+
+    .texto-postgrados{
+        font-size: 1.5vw;
+    }
+
+    .datos{
+        height: auto;
+        font-size: 80%;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"] {
+        border-radius: 20px;  
+        margin-bottom: 10px;   
+        box-sizing: border-box; 
+    }
+
+    footer{
+        gap: 100px;
+    }
+
+    .logo-footer{
+        width: 50%;
+        margin: auto;
+    }
+
+    .ig-wsp{
+        margin: auto;
+        width: 40%;
+        font-size: 80%;
+    }
+
+    .enlaces-footer a img{
+        max-width: 50%;
+        margin: auto;
+    }
+
+    .header-nosotros{
+        height: 80px;
+    }
+
+
+    .enlaces-nosotros a {
+        margin-left: -20px;
+        width: 100px;
+        padding: 10px 10px;
+        font-size: 2.5vw;
+        text-align: center;
+        top: 0;
+        height: 10px;
+        overflow: hidden;
+    }
+
+    .logo-nosotros{
+        margin-top: 10px;
+        width: 70%;
+    }
+
+    .logo-nosotros img{
+        width: 250px;
+        margin-left: -90px;
+    }
+
+    .principal-nosotros{
+        display: block;
+    }
+
+    .titulo-nosotros{
+        width: 90%;
+        padding-bottom: 20px;
+        margin-top: 10px;
+        margin-left: 30px;
+        margin: auto;
+    }
+
+    .titulo-nosotros h1{
+        font-size: 5vw;
+        text-align: center;
+        margin: auto;
+    }
+
+    .imagen-principal-nosotros{
+        margin-left: 200px;
+    }
+
+    .container-img-uno {
+        margin-left: -270px;
+    }
+
+    .container-img-dos{
+        margin-top: -335px;
+        margin-right: 250px;
+    }
+
+    .container-img-uno img{
+        width: 500px;
+    }
+
+    .container-img-dos img{
+        width: 500px;
+    }
+
+    .titulo-nosotros p{
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    .historia h2{
+        font-size: 5vw;
+    }
+
+    .razones h2{
+        font-size: 4vw;
+    }
+
+    .razones ul li{
+        font-size: 3vw;
+    }
+
+    .seccion-contactate{
+        display: block;
+        margin-bottom: 50px;
+    }
+
+    .presentacion{
+        width: 50%;
+        padding: 20px;
+        margin: auto;
+        font-size: 1.6vw;
+    }
+
+    .container-izquierda{
+        width: 90%;
+        margin: auto;
+        margin-top: 100px;
+        margin-bottom: 20px;
+        height: 400px;
+        gap: 130px;
+    }
+
+    .container-izquierda h1{
+        font-size: 3vw;
+    }
+
+    .container-izquierda h2{
+        font-size: 3vw;
+    }
+
+   .container-derecha{
+        margin: auto;
+        width: 40%;
+        text-align: center;
+        height: 200px;
+    }
+
+    .container-derecha h2{
+        font-size: 3vw;
+        margin-top: -50px;
+    }
+    
+    .imagen-presentacion{
+        width: 10%;
+        margin-left: 0;
+    }
+
+    .imagen-presentacion img{
+        margin: auto;
+        max-width: 180px;
+        margin-top: 20px;
+    }
+
+    .form-group label{
+        font-size: 3vw;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="tel"],
+    .form-group input[type="email"],
+    .form-group textarea {
+        width: 100%; 
+        padding: 1px; 
+        margin-left: 0px;
+        
+    }
+
+    .form-group input[type="submit"] {
+        width: auto;
+        padding: 5px 10px; 
+        cursor: pointer; 
+        font-size: 4vw;
+    }
+
+    .logo-footer img{
+        max-width: 160%;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:480px){
+    .header-inicio{
+        display: block;
+    }
+    
+    .logo-inicio{
+        width: 80%;
+        margin: auto;
+    }
+    
+    .logo-inicio img{
+        max-width: 100% ;
+    }
+
+    .enlaces-inicio-contenedor{
+        display: flex;
+        justify-content: center;
+        margin-left: -50px;
+    }
+    
+    .enlaces-inicio{
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        display: block;
+        font-size: 80%;
+    }
+
+    .principal h1{
+        font-size: 220%;
+    }
+
+    .t-v{
+        margin-top: -40px;
+        display: block;
+    }
+
+    .imagen-f{
+        margin-right: 30px;
+        height: auto;
+        font-size: auto;
+    }
+
+    .imagen-f h2{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .imagen-f p{
+        font-size: 90%;
+    }
+
+    .imagen-f ul li button{
+        text-align: start;
+    }
+
+    .imagen-f ul li button strong{
+        font-size: 12px;
+    }
+    
+    .video-f{
+        margin-left: -50px;
+    }
+    
+    .video-f video{
+        max-width: 120%;
+    }
+
+    .debajo-video{
+        margin-left: 50px;
+    }
+
+    .linea-video{
+        margin-left: 50px;
+    }
+    .tipos-servicios{
+        display: block;
+    }
+
+    .postgrados-diplomatura {
+        margin-top: -20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .postgrados-diplomatura div {
+        flex: 0 0 30%;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .postgrados-especialidades{
+         margin-top: -20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .postgrados-especialidades div {
+        flex: 0 0 30%;
+        margin: 10px;
+        text-align: center
+    }
+    
+    .diplomatura{
+        margin: auto;
+        width: 100%;
+    }
+
+    .especialidades{
+        border-top: solid 2px grey;
+        padding-top: 30px;
+        margin: auto;
+        width: 100%;
+    }
+
+    .titulo-servicios h2{
+        font-size: 100%;
+    }
+
+    .texto-postgrados h2{
+        font-size: 200%;
+    }
+
+    .texto-postgrados p{
+        font-size: 200%;
+    }
+
+    .postgrados div a img{
+        margin-left: -10px;
+        max-width:  70% ;
+        align-items: center;
+    }
+
+    .postgrados div h4{
+        margin-top: -10px;
+        text-align: center;
+        font-size: 60%;
+    }
+
+    .texto-postgrados{
+        font-size: 1.5vw;
+    }
+
+    .datos{
+        height: auto;
+        font-size: 80%;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"] {
+        border-radius: 20px;  
+        margin-bottom: 10px;   
+        box-sizing: border-box; 
+    }
+
+    footer{
+        gap: 100px;
+    }
+
+    .logo-footer{
+        width: 50%;
+        margin: auto;
+    }
+
+    .ig-wsp{
+        margin: auto;
+        width: 40%;
+        font-size: 80%;
+    }
+
+    .enlaces-footer a img{
+        max-width: 50%;
+        margin: auto;
+    }
+
+    .header-nosotros{
+        height: 80px;
+    }
+
+
+    .enlaces-nosotros a {
+        margin-left: -20px;
+        width: 100px;
+        padding: 10px 10px;
+        font-size: 2.5vw;
+        text-align: center;
+        top: 0;
+        height: 10px;
+        overflow: hidden;
+    }
+
+    .logo-nosotros{
+        margin-top: 10px;
+        width: 70%;
+    }
+
+    .logo-nosotros img{
+        width: 250px;
+        margin-left: -90px;
+    }
+
+    .principal-nosotros{
+        display: block;
+    }
+
+    .titulo-nosotros{
+        width: 90%;
+        padding-bottom: 20px;
+        margin-top: 10px;
+        margin-left: 30px;
+        margin: auto;
+    }
+
+    .titulo-nosotros h1{
+        font-size: 5vw;
+        text-align: center;
+        margin: auto;
+    }
+
+    .imagen-principal-nosotros{
+        margin-left: 200px;
+    }
+
+    .container-img-uno {
+        margin-left: -270px;
+    }
+
+    .container-img-dos{
+        margin-top: -335px;
+        margin-right: 250px;
+    }
+
+    .container-img-uno img{
+        width: 500px;
+    }
+
+    .container-img-dos img{
+        width: 500px;
+    }
+
+    .titulo-nosotros p{
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    .historia h2{
+        font-size: 5vw;
+    }
+
+    .razones h2{
+        font-size: 4vw;
+    }
+
+    .razones ul li{
+        font-size: 3vw;
+    }
+
+    .seccion-contactate{
+        display: block;
+        margin-bottom: 50px;
+    }
+
+    .presentacion{
+        width: 50%;
+        padding: 20px;
+        margin: auto;
+        font-size: 1.6vw;
+    }
+
+    .container-izquierda{
+        width: 90%;
+        margin: auto;
+        margin-top: 100px;
+        margin-bottom: 20px;
+        height: 400px;
+        gap: 130px;
+    }
+
+    .container-izquierda h1{
+        font-size: 3vw;
+    }
+
+    .container-izquierda h2{
+        font-size: 3vw;
+    }
+
+   .container-derecha{
+        margin: auto;
+        width: 40%;
+        text-align: center;
+        height: 200px;
+    }
+
+    .container-derecha h2{
+        font-size: 3vw;
+        margin-top: -50px;
+    }
+    
+    .imagen-presentacion{
+        width: 10%;
+        margin-left: 0;
+    }
+
+    .imagen-presentacion img{
+        margin: auto;
+        max-width: 180px;
+        margin-top: 20px;
+    }
+
+    .form-group label{
+        font-size: 3vw;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="tel"],
+    .form-group input[type="email"],
+    .form-group textarea {
+        width: 100%; 
+        padding: 1px; 
+        margin-left: 0px;
+        
+    }
+
+    .form-group input[type="submit"] {
+        width: auto;
+        padding: 5px 10px; 
+        cursor: pointer; 
+        font-size: 4vw;
+    }
+
+    .logo-footer img{
+        max-width: 160%;
+    }
+}
+
+@media only screen and (min-width:481px) and (max-width:600px){
+    .logo-inicio{
+        width: 50%;
+    }
+    
+    .logo-inicio img{
+        max-width: 100% ;
+    }
+    
+    .enlaces-inicio{
+        width: 150%;
+        margin: auto;
+        margin-top: 30px;
+        display: block;
+        font-size: 70%;
+    }
+
+    .principal h1{
+        font-size: 220%;
+    }
+
+    .t-v{
+        display: block;
+    }
+
+    .imagen-f{
+        margin-right: 30px;
+        height: auto;
+        font-size: auto;
+    }
+
+    .imagen-f h2{
+        font-size: 20px;
+    }
+
+    .imagen-f p{
+        font-size: 90%;
+    }
+
+    .imagen-f ul li button{
+        text-align: start;
+    }
+
+    .imagen-f ul li button strong{
+        font-size: 12px;
+    }
+    
+    .video-f{
+        margin: auto;
+    }
+    
+    .video-f video{
+        max-width: 100%;
+    }
+
+    .tipos-servicios{
+        display: block;
+    }
+    
+    .diplomatura{
+        margin: auto;
+        width: 100%;
+    }
+
+    .especialidades{
+        border-top: solid 2px grey;
+        padding-top: 30px;
+        margin: auto;
+        width: 100%;
+    }
+
+    .titulo-servicios h2{
+        font-size: 100%;
+    }
+
+    .texto-postgrados h2{
+        font-size: 200%;
+    }
+
+    .texto-postgrados p{
+        font-size: 150%;
+    }
+
+    .postgrados div a img{
+        max-width:  70% ;
+        align-items: center;
+    }
+
+    .postgrados div h4{
+        text-align: center;
+        font-size: 80%;
+    }
+
+    .texto-postgrados{
+        font-size: 1.5vw;
+    }
+
+    .datos{
+        height: auto;
+        font-size: 80%;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"] {
+        border-radius: 20px;  
+        margin-bottom: 10px;   
+        box-sizing: border-box; 
+    }
+
+    footer{
+        gap: 100px;
+    }
+
+    .logo-footer{
+        width: 50%;
+        margin: auto;
+    }
+
+    .ig-wsp{
+        margin: auto;
+        width: 40%;
+        font-size: 80%;
+    }
+
+    .enlaces-footer a img{
+        max-width: 50%;
+        margin: auto;
+    }
+
+    .header-nosotros{
+        height: 80px;
+    }
+
+
+    .enlaces-nosotros a {
+        width: 100px;
+        padding: 10px 10px;
+        font-size: 2vw;
+        text-align: center;
+        top: 0;
+        height: 10px;
+        overflow: hidden;
+    }
+
+    .logo-nosotros{
+        margin-top: 10px;
+        width: 50%;
+        align-items: end;
+    }
+
+    .logo-nosotros img{
+        width: 250px;
+    }
+
+    .principal-nosotros{
+        display: block;
+    }
+
+    .titulo-nosotros{
+        width: 90%;
+        padding-bottom: 20px;
+        margin-top: 10px;
+        margin-left: 30px;
+        margin: auto;
+    }
+
+    .titulo-nosotros h1{
+        font-size: 4vw;
+        text-align: center;
+        margin: auto;
+    }
+
+    .imagen-principal-nosotros{
+        margin-left: 200px;
+    }
+
+    .container-img-uno {
+        margin-left: -300px;
+    }
+
+    .container-img-dos{
+        margin-top: -470px;
+        margin-right: 140px;
+    }
+
+    .container-img-uno img{
+        width: 700px;
+    }
+
+    .container-img-dos img{
+        width: 700px;
+    }
+
+    .titulo-nosotros p{
+        font-size: 3vw;
+    }
+
+    .razones h2{
+        font-size: 4vw;
+    }
+
+    .razones ul li{
+        font-size: 3vw;
+    }
+
+    .seccion-contactate{
+        display: block;
+        margin-bottom: 50px;
+    }
+
+    .presentacion{
+        width: 50%;
+        padding: 20px;
+        margin: auto;
+        font-size: 1.6vw;
+    }
+
+    .container-izquierda{
+        width: 80%;
+        margin: auto;
+        margin-top: 100px;
+        margin-bottom: 20px;
+        height: 400px;
+        gap: 130px;
+    }
+
+   .container-derecha{
+        margin: auto;
+        width: 40%;
+        text-align: center;
+        height: 350px;
+    }
+
+    .container-derecha h2{
+        font-size: 3vw;
+        margin-top: -20px;
+    }
+
+    
+    .imagen-presentacion{
+        width: 20%;
+        margin-left: 0;
+    }
+
+    .imagen-presentacion img{
+        margin: auto;
+        max-width: 200px;
+        margin-top: 20px;
+    }
+
+    .form-group label{
+        font-size: 3vw;
+    }
+
+    .logo-footer img{
+        max-width: 160%;
+    }
+}
+
+@media only screen and (min-width:601px) and (max-width:768px){
+    .logo-inicio{
+        width: 50%;
+    }
+    
+    .logo-inicio img{
+        max-width: 100% ;
+    }
+    
+    .enlaces-inicio{
+        width: 150%;
+        margin: auto;
+        margin-top: 30px;
+        display: block;
+        font-size: 70%;
+    }
+
+    .principal h1{
+        font-size: 220%;
+    }
+
+    .t-v{
+        display: block;
+    }
+
+    .imagen-f{
+        margin-right: 30px;
+        height: auto;
+        font-size: auto;
+    }
+
+    .imagen-f h2{
+        font-size: 20px;
+    }
+
+    .imagen-f p{
+        font-size: 90%;
+    }
+
+    .imagen-f ul li button{
+        text-align: start;
+    }
+
+    .imagen-f ul li button strong{
+        font-size: 12px;
+    }
+    
+    .video-f{
+        margin: auto;
+    }
+    
+    .video-f video{
+        max-width: 100%;
+    }
+
+    .tipos-servicios{
+        display: block;
+    }
+    
+    .diplomatura{
+        margin: auto;
+        width: 100%;
+    }
+
+    .especialidades{
+        border-top: solid 2px grey;
+        padding-top: 30px;
+        margin: auto;
+        width: 100%;
+    }
+
+    .titulo-servicios h2{
+        font-size: 150%;
+    }
+
+    .postgrados div a img{
+        max-width:  70% ;
+        align-items: center;
+    }
+
+    .postgrados div h4{
+        text-align: center;
+        font-size: 70%;
+    }
+
+    .texto-postgrados{
+        font-size: 1.5vw;
+    }
+
+    .ig-wsp{
+        width: 30%;
+        font-size: 80%;
+    }
+
+    .enlaces-footer a img{
+        max-width: 50%;
+        margin: auto;
+    }
+
+    .header-nosotros{
+        height: 80px;
+    }
+
+    .enlaces-nosotros a {
+        width: 100px;
+        padding: 10px 10px;
+        font-size: 1.5vw;
+        text-align: center;
+        top: 0;
+        height: 10px;
+        overflow: hidden;
+    }
+
+    .logo-nosotros{
+        margin-top: 10px;
+        width: 50%;
+        align-items: end;
+    }
+
+    .logo-nosotros img{
+        width: 250px;
+    }
+
+    .enlaces-nosotros{
+        width: 50%;
+        margin: auto;
+    }
+
+    .principal-nosotros{
+        display: block;
+    }
+
+    .titulo-nosotros{
+        width: 90%;
+        padding-bottom: 20px;
+        margin-top: 10px;
+        margin-left: 30px;
+        margin: auto;
+    }
+
+    .titulo-nosotros h1{
+        font-size: 3vw;
+        text-align: center;
+        margin: auto;
+    }
+
+    .imagen-principal-nosotros{
+        margin-left: 200px;
+    }
+
+    .container-img-uno {
+        margin-left: -300px;
+    }
+
+    .container-img-dos{
+        margin-top: -470px;
+        margin-right: 140px;
+    }
+
+    .container-img-uno img{
+        width: 700px;
+    }
+
+    .container-img-dos img{
+        width: 700px;
+    }
+
+    .titulo-nosotros p{
+        font-size: 1.8vw;
+    }
+
+    .razones h2{
+        font-size: 3vw;
+    }
+
+    .razones ul li{
+        font-size: 1.8vw;
+    }
+    .seccion-contactate{
+        display: block;
+        margin-bottom: 50px;
+    }
+    .presentacion{
+        width: 50%;
+        padding: 20px;
+        margin: auto;
+        font-size: 1.4vw;
+    }
+
+    .container-izquierda{
+        width: 80%;
+        margin: auto;
+        margin-top: 100px;
+        margin-bottom: 20px;
+        height: 450px;
+        gap: 130px;
+    }
+
+   .container-derecha{
+        margin: auto;
+        width: 40%;
+        text-align: center;
+        height: auto;
+    }
+
+    .container-derecha h2{
+        font-size: 2vw;
+    }
+    
+    .imagen-presentacion{
+        width: 20%;
+        margin-left: 0;
+    }
+
+    .imagen-presentacion img{
+        margin: auto;
+        max-width: 250px;
+        margin-top: -13px;
+    }
+    .form-group label{
+        font-size: 1.5vw;
+    }
+    .logo-footer img{
+        max-width: 160%;
+    }
+
+    
+}
+
+@media only screen and (min-width:769px) and (max-width:1024px){
+
+    .enlaces{
+        font-size: 94%;
+    }
+    
+    .t-v{
+        margin-left: auto;
+    }
+    .imagen-f{
+        margin-right: 30px;
+        height: auto;
+        font-size: auto;
+    }
+
+    .imagen-f h2{
+        font-size: 20px;
+    }
+
+    .imagen-f p{
+        font-size: 90%;
+    }
+
+    .imagen-f ul li button{
+        text-align: start;
+    }
+
+    .imagen-f ul li button strong{
+        font-size: 12px;
+    }
+    
+    .video-f{
+        margin: auto;
+    }
+    
+    .video-f video{
+        max-width: 100%;
+    }
+
+    .postgrados div a img{
+        max-width:  95% ;
+        align-items: center;
+    }
+
+    .postgrados div h4{
+        text-align: center;
+        font-size: 1.45vw;
+        margin-left: 20px;
+    }
+
+    .texto-postgrados{
+        font-size: 1.5vw;
+    }
+
+    .linea-aviso{
+        margin-top: 53px;
+    }
+
+    .enlaces-nosotros a{
+        font-size: 1.2vw ;
+        text-align: center;
+        width:100px;
+    }
+
+    .titulo-nosotros{
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+
+    .titulo-nosotros h1{
+        font-size: 3vw;
+    }
+
+    .titulo-nosotros p{
+        font-size: 1.8vw;
+    }
+
+    .imagen-principal-nosotros{
+        margin-right: -470px;
+        gap: 20px;
+    }
+
+    .container-img-uno img{
+        max-width: 50%;
+        margin-left: 240px;
+    }
+
+    .container-img-dos img{
+        margin-left: 60px;
+        max-width: 60%;
+        margin-top: 200px;
+    }
+
+    .razones h2{
+        font-size: 3vw;
+    }
+
+    .razones ul li{
+        font-size: 1.8vw;
+    }
+    
+    .seccion-contactate{
+        display: block;
+        margin-bottom: 50px;
+    }
+    .presentacion{
+        width: 50%;
+        padding: 20px;
+        margin: auto;
+        font-size: 1.4vw;
+    }
+
+    .container-izquierda{
+        width: 80%;
+        margin: auto;
+        margin-top: 150px;
+        margin-bottom: 20px;
+        height: 500px;
+    }
+
+   .container-derecha{
+        margin: auto;
+        width: 40%;
+        text-align: center;
+        height: auto;
+    }
+
+    .container-derecha h2{
+        font-size: 2vw;
+    }
+    
+    .imagen-presentacion{
+        width: 50%;
+    }
+    .imagen-presentacion img{
+        margin: auto;
+        max-width: 250px;
+        margin-top: 38px;
+    }
+    .form-group label{
+        font-size: 1.5vw;
+    }
+    .logo-footer img{
+        max-width: 160%;
+    }
+
+
+}
+
+@media only screen and (min-width:1025px) and (max-width:1199px){
+    .t-v{
+        margin-left: auto;
+    }
+    .imagen-f{
+        margin-right: 30px;
+        height: auto;
+        font-size: auto;
+    }
+
+    .imagen-f h2{
+        font-size: 25px;
+    }
+
+    .imagen-f ul li button{
+        text-align: start;
+    }
+    
+    .video-f{
+        margin: auto;
+    }
+    
+    .video-f video{
+        max-width: 100%;
+    }
+
+    .postgrados div a img{
+        max-width:  90% ;
+        align-items: center;
+    }
+
+    .postgrados div h4{
+        font-size: 1vw;
+        margin-left: 20px;
+    }
+
+    .linea-aviso{
+        margin-top: 34px;
+    }
+
+    .imagen-principal-nosotros{
+        margin-right: -370px;
+    }
+
+    
+    .presentacion{
+        font-size: 1.2vw;
+    }
+
+    .container-izquierda{
+        margin-right: auto;
+    }
+
+   .container-derecha{
+        width: 20%;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (min-width:1024px) and (max-width:1220px){
+    .linea-aviso{
+        margin-top: 52px;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width:1399px){
+    .imagen-principal img {
+        max-width: 100%; /* Esto asegura que la imagen no exceda el ancho del contenedor */
+        height: auto; /* Esto permite que la altura se ajuste automáticamente para mantener la proporción */
+    }
+    
+    .imagen-f{
+        margin-right: 30px;
+        padding: 0 50px;
+        height: auto;
+    }
+
+    .imagen-f ul li button{
+        text-align: start;
+    }
+
+    .video-f{
+        margin: auto;
+    }
+
+    .video-f video{
+        max-width: 100%;
+    }
+
+   .titulo-nosotros{
+        padding: 0 30px;
+    }
+
+   .imagen-principal-nosotros{
+    margin-right: -170px;
+   }
+
+   .container-izquierda{
+        margin-right: auto;
+    }
+   .container-derecha{
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width:1500px) {
+    .imagen-principal img {
+        max-width: 100%; /* Esto asegura que la imagen no exceda el ancho del contenedor */
+        height: auto; /* Esto permite que la altura se ajuste automáticamente para mantener la proporción */
+    }
+   
+    .linea{
+        margin-top: 53px;
+    }
+}
+
+@media only screen and (min-width: 1400px) and (max-width:1760px){
+   
+
+}
