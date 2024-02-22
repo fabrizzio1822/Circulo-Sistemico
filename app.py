@@ -2,7 +2,6 @@ from flask import Flask, request
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-import os
 
 app = Flask(__name__)
 
@@ -33,8 +32,8 @@ def enviar_formulario():
         # Configurar el servidor SMTP
         smtp_server = 'smtp.gmail.com'
         port = 587
-        sender_email = 'tucorreodeejemplo@gmail.com'  # Cambia esto por tu dirección de correo
-        password = os.environ.get('MI_CONTRASEÑA_DE_CORREO')  # Utiliza la variable de entorno
+        sender_email = 'fabrizzioparrillistrabajo@gmail.com'  # Cambia esto por tu dirección de correo
+        password = 'acef1822'  # Cambia esto por tu contraseña
 
         # Crear el objeto MIMEText
         msg = MIMEMultipart()

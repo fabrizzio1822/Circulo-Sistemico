@@ -22,8 +22,8 @@ def enviar_formulario():
         # Configurar el servidor SMTP
         smtp_server = 'smtp.gmail.com'
         port = 587
-        sender_email = 'tucorreodeejemplo@gmail.com'  # Cambia esto por tu dirección de correo
-        password = 'tupassword'  # Cambia esto por tu contraseña
+        sender_email = 'fabrizzioparrillistrabajo@gmail.com'  # Cambia esto por tu dirección de correo
+        password = 'acef1822'  # Cambia esto por tu contraseña
 
         # Crear el objeto MIMEText
         msg = MIMEMultipart()
