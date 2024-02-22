@@ -6,8 +6,8 @@ app = Flask(__name__)
 # Configuración del servidor de correo
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 587
-app.config['MAIL_USERNAME'] = 'tucorreodeejemplo@gmail.com'
-app.config['MAIL_PASSWORD'] = 'tupassword'
+app.config['MAIL_USERNAME'] = 'fabrizzioparrillis@gmail.com'
+app.config['MAIL_PASSWORD'] = 'acef1822'
 app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USE_SSL'] = False
 
@@ -25,7 +25,7 @@ def enviar_formulario():
         email = request.form['email']
 
         message = Message('Nuevo formulario de contacto',
-                          sender='tucorreodeejemplo@gmail.com',
+                          sender='fabrizzioparrillis@gmail.com',
                           recipients=['circulosistemico1@gmail.com'])
         message.body = f"Nombre: {nombre}\nTeléfono: {telefono}\nCorreo Electrónico: {email}"
 
