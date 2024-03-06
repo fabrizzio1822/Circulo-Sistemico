@@ -66,22 +66,38 @@
                 
             </div> 
         </section>
-
-        <footer class="footer-comunicate">
-            <div class="logo-footer">
-                <img src="../Imagenes/Loso transparente.png" alt="Logo">
-            </div>
-            <div class="ig-wsp">
-                <h3>Comunicate a traves de:</h3>
-                <div class="enlaces-footer">
-                    <a href="https://www.instagram.com/circulosistemico/"><img src="../Imagenes/logo ig.png" alt="Logo de Instagram" class="logo-footer logo-enlace"></a>
-                    <a href="https://api.whatsapp.com/message/6ACK444DNTJEM1?autoload=1&app_absent=0"><img src="../Imagenes/logo wsp.png" alt="Logo de Whatsapp" class="logo-footer logo-enlace"></a>
-                </div>
-                
-            </div>    
-        </footer>
-
     </main>
+    <footer class="footer-comunicate">
+        <div class="logo-footer">
+            <img src="../Imagenes/Loso transparente.png" alt="Logo">
+        </div>
+        <div class="ig-wsp">
+            <h3>Comunicate a traves de:</h3>
+            <div class="enlaces-footer">
+                <a href="https://www.instagram.com/circulosistemico/"><img src="../Imagenes/logo ig.png" alt="Logo de Instagram" class="logo-footer logo-enlace"></a>
+                <!-- Aquí se insertará el enlace de WhatsApp -->
+                <a id="whatsappLink" href="https://api.whatsapp.com/message/6ACK444DNTJEM1?autoload=1&app_absent=0"><img src="../Imagenes/logo wsp.png" alt="Logo de Whatsapp" class="logo-footer logo-enlace"></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Importamos jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        function cambiarEnlace() {
+            var tabletSize = 768; // Tamaño en píxeles para considerar una pantalla de tablet
+            if ($(window).width() <= tabletSize) {
+                $('#whatsappLink').attr('href', 'https://wa.me/message/6ACK444DNTJEM1');
+            } else {
+                $('#whatsappLink').attr('href', 'https://api.whatsapp.com/message/6ACK444DNTJEM1?autoload=1&app_absent=0');
+            }
+        }
+
+        cambiarEnlace();
+        $(window).resize(cambiarEnlace);
+    });
+    </script>
 
 </body>
 </html>

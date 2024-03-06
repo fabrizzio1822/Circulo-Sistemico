@@ -16,7 +16,7 @@
             <ul>
                 <li class="enlaces enlaces-inicio">
                     <a href="./Pages/sobre-nosotros.html">Sobre Nosotros</a>
-                    <a href="./Pages/contactanos.html">Contactanos</a>
+                    <a href="./Pages/contactanos.html" class="enlace-contactanos">Contactanos</a>
                 </li>
             </ul>
         </div>
@@ -152,23 +152,42 @@
                 </form>
             </div>
         </section>
-        
-        <footer>
-            <div class="logo-footer">
-                <img src="./Imagenes/Loso transparente.png" alt="Logo">
-            </div>
-            <div class="ig-wsp">
-                <h3>Comunicate a traves de:</h3>
-                <div class="enlaces-footer">
-                    <a href="https://www.instagram.com/circulosistemico/"><img src="./Imagenes/logo ig.png" alt="Logo de Instagram" class="logo-footer logo-enlace"></a>
-                    <a href="https://api.whatsapp.com/message/6ACK444DNTJEM1?autoload=1&app_absent=0"><img src="./Imagenes/logo wsp.png" alt="Logo de Whatsapp" class="logo-footer logo-enlace"></a>
-                </div>
-                
-            </div>    
-        </footer>
-
     </main>
+    <footer>
+        <div class="logo-footer">
+            <img src="./Imagenes/Loso transparente.png" alt="Logo">
+        </div>
+        <div class="ig-wsp">
+            <h3>Comunicate a traves de:</h3>
+            <div class="enlaces-footer">
+                <!-- Agregamos un ID al enlace de WhatsApp para identificarlo -->
+                <a href="https://www.instagram.com/circulosistemico/"><img src="./Imagenes/logo ig.png" alt="Logo de Instagram" class="logo-footer logo-enlace"></a>
+                <a id="whatsappLink" href="https://api.whatsapp.com/message/6ACK444DNTJEM1?autoload=1&app_absent=0"><img src="./Imagenes/logo wsp.png" alt="Logo de Whatsapp" class="logo-footer logo-enlace"></a>
+            </div>
+        </div>
+    </footer>
 
+    <!-- Importamos jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        // Función para cambiar el enlace de WhatsApp según el tamaño de la pantalla
+        function cambiarEnlace() {
+            var tabletSize = 768; // Tamaño en píxeles para considerar una pantalla de tablet
+            if ($(window).width() <= tabletSize) {
+                $('#whatsappLink').attr('href', 'https://wa.me/message/6ACK444DNTJEM1');
+            } else {
+                $('#whatsappLink').attr('href', 'https://api.whatsapp.com/message/6ACK444DNTJEM1?autoload=1&app_absent=0');
+            }
+        }
+
+        // Llamar a la función cuando la página se carga y cuando se redimensiona la ventana
+        cambiarEnlace();
+        $(window).resize(cambiarEnlace);
+    });
+    </script>
+</body>
+</html>
     
 </body>
 </html>

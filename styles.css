@@ -624,7 +624,7 @@ textarea {
 
 /*------------------------ Responsive ------------------------*/
 
-@media only screen and (max-width:320px) {
+@media only screen and (max-width:309px) {
     .header-inicio{
         display: block;
     }
@@ -639,6 +639,7 @@ textarea {
     }
 
     .enlaces-inicio-contenedor{
+        margin-right: 40px;
         display: flex;
         justify-content: center;
     }
@@ -648,8 +649,12 @@ textarea {
         display: flex;
         justify-content: center;
         width: 100%;
-        display: block;
-        font-size: 80%;
+        font-size: 60%;
+    }
+
+    .enlaces-inicio a{
+        text-align: center;
+        padding: 5px 20px;
     }
 
     .principal h1{
@@ -954,7 +959,7 @@ textarea {
     }
 }
 
-@media only screen and (min-width:320px) and (max-width:480px){
+@media only screen and (min-width:310px) and (max-width:480px){
     .header-inicio{
         display: block;
     }
