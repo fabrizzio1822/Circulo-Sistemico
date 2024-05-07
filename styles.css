@@ -828,7 +828,7 @@ textarea {
     .logo-inicio img{
         max-width: 100% ;
     }
-    .enlaces{
+    .enlaces-inicio{
         display: none;
     }
     .bars__menu{
@@ -1084,7 +1084,7 @@ textarea {
     .logo-inicio{
         width: 50%;
     }   
-    .enlaces{
+    .enlaces-inicio{
         display: none;
     }
     .bars__menu{
@@ -1291,7 +1291,7 @@ textarea {
     .logo-inicio img{
         max-width: 100% ;
     }
-    .enlaces{
+    .enlaces-inicio{
         display: none;
     }
     .bars__menu{
@@ -1470,7 +1470,7 @@ textarea {
     }
 }
 @media only screen and (min-width:769px) and (max-width:1024px){
-    .enlaces{
+    .enlaces-inicio{
         display: none;
     }
     .bars__menu{
