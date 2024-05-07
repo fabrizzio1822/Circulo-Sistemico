@@ -5,25 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactanos</title>
     <link rel="stylesheet" href="../styles.css">
-    <link rel="icon" href="../Imagenes/ces-25-color.png" type="image/x-icon">
+    <link rel="icon" href="../Imagenes/ces-25-color.webp" type="image/x-icon">
 </head>
 <body>
     <header class="header-nosotros">
         <div class="enlaces enlaces-nosotros">
             <a href="../index.html">Volver al Inicio</a>
         </div>
-
         <div class="logo logo-nosotros">
-            <img src="../Imagenes/Loso transparente.png" alt="logo">
+            <img src="../Imagenes/Loso transparente.webp" alt="logo">
         </div>
         <div>
     </header>
     <main>
         <section class="seccion-contactate">
             <div class="container-izquierda">
-
                 <div class="imagen-presentacion">
-                    <img src="../Imagenes/adrian.png" alt="imagen director">
+                    <img src="../Imagenes/adrian.webp" alt="imagen director">
                 </div>
                 <div class="presentacion">
                     <h1>Hola, soy Adrián</h1>
@@ -32,10 +30,7 @@
                     <h2>Soy doctor en psicología, máster en terapia familiar, terapeuta de familia y pareja, especialista en modelo sistémico y licenciado en psicología</h2>
                     <p>Aca te dejo un formulario para que puedas mandarme un mensaje para comunicarte con Nosotros</p> 
                 </div>
-                
             </div>
-            
-
             <div class="container-derecha">
                 <h2>Comunicate con Nosotros</h2>
                 <form action="https://formsubmit.co/circulosistemico1@gmail.com" method="post">
@@ -57,30 +52,26 @@
                     </div>
                     <div class="form-group">
                         <input type="submit" value="Enviar" class="cta-a">
-                        
-                        <input type="hidden" name="_next" value="https://circulosistemico.000webhostapp.com/Pages/contactanos.html">
-                    
+                        <input type="hidden" name="_next" value="https://circulo-sistemico.vercel.app/Pages/contactanos.html">                    
                         <input type="hidden" name="_captcha" value="false">
                     </div>
-                </form>
-                
+                </form>             
             </div> 
         </section>
     </main>
     <footer class="footer-comunicate">
         <div class="logo-footer">
-            <img src="../Imagenes/Loso transparente.png" alt="Logo">
+            <img src="../Imagenes/Loso transparente.webp" alt="Logo">
         </div>
         <div class="ig-wsp">
             <h3>Comunicate a traves de:</h3>
             <div class="enlaces-footer">
-                <a href="https://www.instagram.com/circulosistemico/"><img src="../Imagenes/logo ig.png" alt="Logo de Instagram" class="logo-footer logo-enlace"></a>
+                <a href="https://www.instagram.com/circulosistemico/"><img src="../Imagenes/logo ig.webp" alt="Logo de Instagram" class="logo-footer logo-enlace"></a>
                 <!-- Aquí se insertará el enlace de WhatsApp -->
-                <a id="whatsappLink" href="https://api.whatsapp.com/message/6ACK444DNTJEM1?autoload=1&app_absent=0"><img src="../Imagenes/logo wsp.png" alt="Logo de Whatsapp" class="logo-footer logo-enlace"></a>
+                <a id="whatsappLink" href="https://api.whatsapp.com/message/6ACK444DNTJEM1?autoload=1&app_absent=0"><img src="../Imagenes/logo wsp.webp" alt="Logo de Whatsapp" class="logo-footer logo-enlace"></a>
             </div>
         </div>
     </footer>
-
     <!-- Importamos jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
@@ -93,11 +84,9 @@
                 $('#whatsappLink').attr('href', 'https://api.whatsapp.com/message/6ACK444DNTJEM1?autoload=1&app_absent=0');
             }
         }
-
         cambiarEnlace();
         $(window).resize(cambiarEnlace);
     });
     </script>
-
 </body>
 </html>

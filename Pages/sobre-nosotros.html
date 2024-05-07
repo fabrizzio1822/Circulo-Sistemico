@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Nosotros</title>
     <link rel="stylesheet" href="../styles.css">
-    <link rel="icon" href="../Imagenes/ces-25-color.png" type="image/x-icon">
+    <link rel="icon" href="../Imagenes/ces-25-color.webp" type="image/x-icon">
 </head>
 <body>
     <header class="header-nosotros">
@@ -14,11 +14,10 @@
         </div>
 
         <div class="logo logo-nosotros">
-            <img src="../Imagenes/Loso transparente.png" alt="logo">
+            <img src="../Imagenes/Loso transparente.webp" alt="logo">
         </div>
         <div>
     </header>
-
    <main>
         <section class="principal-nosotros">
             <div class="titulo-nosotros">
@@ -27,31 +26,25 @@
                 práctica, brindándote herramientas prácticas para aplicar en el mundo real. Con nuestros postgrados, podrás adquirir habilidades y conocimientos.</p>
             </div>
             <div class="imagen-principal-nosotros">
-                <div class="container-img-uno"><img src="../Imagenes/sobre-nosotros (3).jpg" alt="" class="img-uno"></div>
-                <div class="container-img-dos"><img src="../Imagenes/sobre-nosotros (2).jpg" alt="" class="img-dos"></div>
+                <div class="container-img-uno"><img src="../Imagenes/sobre-nosotros (3).webp" alt="imagen principal nosotros " class="img-uno"></div>
+                <div class="container-img-dos"><img src="../Imagenes/sobre-nosotros (2).webp" alt="imagen secundaria nosotros" class="img-dos"></div>
             </div>  
         </section>
-
         <section class="historia">
             <h2>Nuestra Historia</h2>
             <div class="carousel">
                 <button class="prev">&#10094;</button>
                 <div class="carousel-images">
-                    <img src="../Imagenes/1.png" alt="Image 1">
-                    <img src="../Imagenes/2.png" alt="Image 2">
-                    <img src="../Imagenes/3.png" alt="Image 3">
-                    <img src="../Imagenes/4.png" alt="Image 4">
-                    <img src="../Imagenes/5.png" alt="Image 5">
+                    <img src="../Imagenes/1.webp" alt="Image 1">
+                    <img src="../Imagenes/2.webp" alt="Image 2">
+                    <img src="../Imagenes/3.webp" alt="Image 3">
+                    <img src="../Imagenes/4.webp" alt="Image 4">
+                    <img src="../Imagenes/5.webp" alt="Image 5">
                 </div>
                 <button class="next">&#10095;</button>
             </div>
-        
             <script src="../script.js"></script>
-            
-            
         </section>
-
-
         <section class="razones">
             <h2>Por que confiar en nosotros?</h2>
             <ul class="razones-para-confiar">
@@ -59,38 +52,33 @@
                 <li>Entendemos lo importante que es recibir terapia familiar y de pareja cuando hay problemas y psicopatologias. </li>
                 <li>Estamos asociados a escuelas sistemicas de prestigio y trayectoria, lo que nos convierte en un centro que reúne juventud y experiencia.</li>
             </ul>
-
-            
-        
         </section>
    </main>
    <footer>
         <div class="logo-footer">
-            <img src="../Imagenes/Loso transparente.png" alt="Logo">
+            <img src="../Imagenes/Loso transparente.webp" alt="Logo">
         </div>
         <div class="ig-wsp">
             <h3>Comunicate a traves de:</h3>
             <div class="enlaces-footer">
-                <a href="https://www.instagram.com/circulosistemico/"><img src="../Imagenes/logo ig.png" alt="Logo de Instagram" class="logo-footer logo-enlace"></a>
+                <a href="https://www.instagram.com/circulosistemico/"><img src="../Imagenes/logo ig.webp" alt="Logo de Instagram" class="logo-footer logo-enlace"></a>
                 <!-- Aquí se insertará el enlace de WhatsApp -->
-                <a id="whatsappLink" href="https://api.whatsapp.com/message/6ACK444DNTJEM1?autoload=1&app_absent=0"><img src="../Imagenes/logo wsp.png" alt="Logo de Whatsapp" class="logo-footer logo-enlace"></a>
+                <a id="whatsappLink" href="https://api.whatsapp.com/message/6ACK444DNTJEM1?autoload=1&app_absent=0"><img src="../Imagenes/logo wsp.webp" alt="Logo de Whatsapp" class="logo-footer logo-enlace"></a>
             </div>
         </div>
     </footer>
-
     <!-- Importamos jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
     $(document).ready(function(){
         function cambiarEnlace() {
-            var tabletSize = 768; // Tamaño en píxeles para considerar una pantalla de tablet
+            var tabletSize = 768;
             if ($(window).width() <= tabletSize) {
                 $('#whatsappLink').attr('href', 'https://wa.me/message/6ACK444DNTJEM1');
             } else {
                 $('#whatsappLink').attr('href', 'https://api.whatsapp.com/message/6ACK444DNTJEM1?autoload=1&app_absent=0');
             }
         }
-
         cambiarEnlace();
         $(window).resize(cambiarEnlace);
     });
